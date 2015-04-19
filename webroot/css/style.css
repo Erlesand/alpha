@@ -1,0 +1,201 @@
+/**
+ * General elements
+ */
+body {
+  color: #333;
+  font-family: 'Lato', 'Open Sans', sans-serif;
+}
+ 
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+  margin: 0 auto;
+  width: 980px; 
+  padding: 10px;
+}
+ 
+ 
+/**
+ * Layout for header
+ */
+#header {
+  position: relative;
+  margin-bottom: 40px;
+}
+ 
+.sitetitle {
+  position: absolute;
+  top: 6px;
+  left: 340px;
+  font-size: 48px;
+  font-family: 'Lato', sans-serif;
+}
+ 
+.siteslogan {
+  position: absolute;
+  top: 65px;
+  left: 340px;
+  color: #666;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+#above { background: rgb(169,36,36); line-height: 2em; color: white; padding: 0 0.5em; margin-bottom: 1em; font-size: 12px;  } 
+#above a { color: white; }
+ 
+/**
+ * Layout for main
+ */
+#main {
+  min-height: 20em;
+}
+
+html * {  font-family: 'Open Sans', sans-serif; }
+ 
+ 
+/**
+ * Layout for footer
+ */
+#footer {
+  margin-top: 40px;
+  border-top: 1px solid rgb(169,36,36);
+  padding-top: 15px;
+}
+ 
+.sitefooter {
+  color: #666;
+}
+
+/** 
+  * Navigation 
+  */
+ nav.navbar { background: rgb(169,36,36); font-weight: bold; padding: 4px 8px; }
+ nav.navbar a { color: white; text-decoration: none; font-family: 'Open Sans', sans-serif; padding: 6px 8px; border: 2px solid transparent; }
+ nav.navbar a:hover { border-color: rgb(169,36,36); background: white; color: rgb(169,36,36); border-radius: 5px }
+ nav.navbar a.selected { border-color: rgb(169,36,36); border-radius: 5px; background: white; color: rgb(169,36,36); }
+ 
+ /* Headers */
+	h1,h2,h3 { font-family: 'Lato', 'Open Sans', sans-serif; }
+	h2 { color: rgb(169,36,36); text-decoration: underline }
+ 
+	a { color: rgb(169,36,36); }
+ 
+ /* Theme */ 
+ .theme-color { color: rgb(169,36,36) }
+ 
+article.report { width: 80%; padding: 1px 1em 1em; border-bottom: 1px solid #999; position: relative; counter-increment: report; }
+article.report:nth-child(2) { border-top: 1px solid #999; }
+article.report:nth-child(even) { background: #f6f6f6; }
+article.report:nth-child(odd) { background: #e6e6e6; }
+article.report:before { content: "kursmoment " counter(report); display: block; width: 150px; height: 20px; background: rgb(169,36,36); color: white;
+	padding: 5px 10px 5px 20px;
+	border-top-left-radius: 5px; 	
+	border-top-right-radius: 5px; 
+	position: absolute; left: -106px; top: 74px; border: 1px solid #999;
+	font-variant: small-caps;
+	text-transform: uppercase; 
+	text-align: center; 
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.datebox
+{
+	float: left;
+	background-color: white;
+	border: 1px solid #666;
+	color: #ffffff;
+	color: rgb(169,36,36);
+	position: relative;
+	margin: 20px 0 0 20px;
+	border-radius: 5px;
+}
+	.datebox .month
+	{
+		display: block;
+		text-align: center;
+		font-size: 15px;
+		line-height: 15px;
+		padding: 2px 0;
+		background-color: rgb(169,36,36);
+		color: white;
+		text-transform: uppercase;
+	}
+	.datebox .day
+	{
+		display: block;
+		text-align: center;
+		font-size: 40px;
+		line-height: 40px;
+		font-weight: bold;
+		padding: 2px 24px 2px 10px;
+	}
+	.datebox .year
+	{
+		display: block;
+		writing-mode: tb-rl;
+		-webkit-transform: rotate(90deg);	
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+		position: absolute;
+		right: 0;
+		bottom: 9px;
+		font-size: 14px;
+	}
+	*:first-child+html .datebox .year { right: -28px; } /* IE7 positions element differently to IE6 & 8 */
+	.datebox span:nth-child(3)
+	{
+		right: -8px;
+		bottom: 12px;
+		writing-mode: lr-tb; 
+	}
+	
+.report-footer { background: #dadada; color: white; margin: 0 -1em -1em; padding: 5px 1em; border-top: 1px solid #999 }
+.report-footer a { color: white; text-decoration: none; }
+.report-footer a:hover { text-decoration: underline; }
+
+ /* figure & figcaption
+-------------------------------------------------------- 
+
+*/
+figure {  padding:4px; margin:1em; text-align:center; max-width: 300px; position: relative; }
+figcaption {font-style:italic;font-size:smaller;padding-left:1em;}
+
+figure.right{margin-right:0;}
+figure.top{margin-top:0;}
+figure.fullwidth{margin-left:0;margin-right:0;}
+
+figure img { width: 100%; }
+
+#photo-me { border: none; border-left: 1px solid #EFEFEF; padding-left: 1em; }
+#photo-me img { -mox-box-shadow: 3px 3px 6px #999; -webkit-box-shadow: 3px 3px 6px #999; box-shadow: 3px 3px 6px #999; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+
+.right { float: right; }
+
+/* article byline & signature
+-------------------------------------------------------- 
+
+*/
+footer.byline, footer.author {
+  clear: both;
+  border-top: 1px dashed #999999;
+  border-bottom: 1px dashed #999999; margin-bottom: 2em;
+  margin:2em auto;
+  padding: 1em;
+  color: #555555;
+  font-size: smaller;
+  font-style:italic;
+}
+
+footer.author { text-align: right; border-bottom: none; margin-bottom: 0; }
+footer.author figure { width: 50px; position: relative; }
+footer.author figure img { width: 50px; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; border: 1px solid #999; padding: 2px; }
+
+footer.byline figure { width: 50px; position: relative; }
+footer.byline figure img { width: 50px; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; border: 1px solid #999; padding: 2px; }
