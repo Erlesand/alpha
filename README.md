@@ -1,9 +1,9 @@
-Alpha-base
+Alpha
 ==========
 
 A web template / boilerplate for smaller websites and web applications using PHP.
 
-Built by Lenny Erlesand.
+Built by Lenny Erlesand, based on work by Mikael Roos (https://github.com/mosbth/Alpha-base).
 
 
 
